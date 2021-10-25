@@ -1,0 +1,31 @@
+@mixin nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;     
+    flex-wrap: nowrap;
+    height: 100px;
+    transition: all 2s ease;     
+}
+
+
+header{         
+    @include nav;
+        li { 
+            list-style-type: none;       
+            font-size: 15px;   
+            width:fit-content;
+            height: 2rem;  
+            a{
+                color: rgb(238, 238, 238);     
+                text-decoration: solid;    
+                flex-wrap: nowrap;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: medium;
+                a:hover{    
+                    color: rgb(230, 230, 230);
+                    font-weight: bold;         
+                } 
+            }
+        }    
+}  

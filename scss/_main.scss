@@ -1,0 +1,87 @@
+main{
+  
+    .logoSkol{    
+        display:block;
+        margin:auto;
+    }
+    
+    .tituloPrincipal{
+        font-weight: normal;
+        font-size: 20px;
+        font-family: 'PT Sans', sans-serif;
+        text-align: center;    
+        word-spacing: 5px;
+        animation-duration: 8s;
+        animation-name: tituloPrincipal;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes tituloPrincipal {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }    
+    }
+    
+
+    h1{
+        color: $colorPrincipal;    
+        text-transform: uppercase;
+        line-height: 30px;    
+        letter-spacing: normal;
+        word-spacing: normal;    
+        //border: 1px solid black;
+        //background-color: goldenrod;    
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;    
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+        flex: 1; 
+    } 
+        
+    .imgCentrada{
+        text-align: center;
+        margin-top: 100px;
+        transition:all 3s ease; 
+        .imgCentrada:hover{
+                transform:scale(1.2 , 1.2);
+        }
+    }
+
+    .historia{
+            background-color: $colorSecundario;
+            color: $colorPrincipal;
+    }
+    .productos{
+        background-color: $colorSecundario;
+    }
+    tr{
+        color: $colorPrincipal;
+        list-style-type:circle;
+        list-style-position: inside;
+        font-family: 'Grechen Fuemen', cursive;        
+    }
+    .form{      
+        display: flex;
+        justify-content: center;
+        font-weight: bolder;
+        background-color:rgba(2, 2, 49, 0.486);
+        color: $colorSecundario;      
+    }       
+    
+}
+
+
+
+
+
+
+
+

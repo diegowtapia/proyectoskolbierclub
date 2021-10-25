@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;   
+}
+
+body{    
+    background: $colorPrincipal;
+    background: linear-gradient(61deg, $colorPrincipal 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, $colorPrincipal 100%);    
+}   

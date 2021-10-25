@@ -1,0 +1,217 @@
+/* comentario se ven en css y scss*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #d98c07;
+  background: linear-gradient(61deg, #d98c07 0%, black 30%, black 70%, #d98c07 100%);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100px;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+header li {
+  list-style-type: none;
+  font-size: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2rem;
+}
+
+header li a {
+  color: #eeeeee;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: medium;
+}
+
+header li a a:hover {
+  color: #e6e6e6;
+  font-weight: bold;
+}
+
+main .logoSkol {
+  display: block;
+  margin: auto;
+}
+
+main .tituloPrincipal {
+  font-weight: normal;
+  font-size: 20px;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  word-spacing: 5px;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-name: tituloPrincipal;
+          animation-name: tituloPrincipal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes tituloPrincipal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes tituloPrincipal {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+main h1 {
+  color: #d98c07;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main .imgCentrada {
+  text-align: center;
+  margin-top: 100px;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+main .imgCentrada .imgCentrada:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+main .historia {
+  background-color: #162146;
+  color: #d98c07;
+}
+
+main .productos {
+  background-color: #162146;
+}
+
+main tr {
+  color: #d98c07;
+  list-style-type: circle;
+  list-style-position: inside;
+  font-family: 'Grechen Fuemen', cursive;
+}
+
+main .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+  background-color: rgba(2, 2, 49, 0.486);
+  color: #162146;
+}
+
+.menuFooter {
+  text-align: center;
+  word-spacing: 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-width: 3000px;
+  margin-top: 20rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #334756;
+  background: radial-gradient(circle, #334756 0%, black 100%);
+  border-radius: 20px;
+}
+
+.menuFooter :hover {
+  background-color: #082032;
+  color: aliceblue;
+}
+
+.menuFooter .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+.menuFooter .redes a {
+  margin: .5rem;
+}
+
+.caja--twt {
+  background-color: #55acee;
+}
+
+.caja--fb {
+  background-color: #3a5795;
+}
+
+.caja--ig {
+  background-color: #f0197d;
+}
+
+.caja--wzp {
+  background-color: green;
+}
+/*# sourceMappingURL=style.css.map */
