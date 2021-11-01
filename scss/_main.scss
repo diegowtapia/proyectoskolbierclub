@@ -3,6 +3,7 @@ main{
     .logoSkol{    
         display:block;
         margin:auto;
+        border-radius: 50%;
     }
     
     .tituloPrincipal{
@@ -46,18 +47,42 @@ main{
         flex: 1; 
     } 
         
-    .imgCentrada{
-        text-align: center;
-        margin-top: 100px;
-        transition:all 3s ease; 
-        .imgCentrada:hover{
-                transform:scale(1.2 , 1.2);
+    .containerNosotros{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin: 0rem 3rem;
+        padding-bottom: 3rem;
+        .historia{
+                background-color: $colorTerciario;
+                color: $colorSecundario;
+                height: 60vh;
+                width: 35vw;
+                font-family: "Bodoni Moda", serif;
+                font-size: 3rem;
+                line-height: 2rem;
+                font-weight: 500;
+                word-spacing: 0.3rem;
+                padding: 3rem;
+                margin: 3rem 0rem 0rem 0rem;                      
+                border: 1px #9d9d9d solid;       
+                .imgCheers{
+                    margin: 3rem 0rem 0rem 0rem;  
+                    padding: 1rem;                  
+                    :hover{
+                            transition: 0.8s;
+                            transform:scale(1.2 , 1.2);
+                    }    
+                }                 
         }
-    }
-
-    .historia{
-            background-color: $colorSecundario;
-            color: $colorPrincipal;
+                
     }
     .productos{
         background-color: $colorSecundario;
@@ -74,8 +99,46 @@ main{
         font-weight: bolder;
         background-color:rgba(2, 2, 49, 0.486);
         color: $colorSecundario;      
-    }       
-    
+    }
+    .botonWzp{ 
+        img {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 65%;
+            left: 5px;
+            z-index: 3 !important;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            opacity: 0.7;            
+        }        
+    }
+    .botonIg{ 
+        img {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 75%;
+            left: 5px;
+            z-index: 3 !important;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            opacity: 0.7;            
+        }        
+    }
+    .botonFb{ 
+        img {
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            top: 85%;
+            left: 5px;
+            z-index: 3 !important;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            opacity: 0.7;
+        }        
+    }   
 }
 
 

@@ -1,31 +1,56 @@
-@mixin nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;     
-    flex-wrap: nowrap;
-    height: 100px;
-    transition: all 2s ease;     
+@mixin nav {   
+    .conteiner{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-flow: row nowrap;
+                    flex-flow: row nowrap;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+    }
+    .logoNavbar{
+        img{
+            margin-left: 2vw;
+            width: auto;
+            border-radius: 50%;            
+        }
+    }
+    .botonHamburguesa{
+        margin-right: 1rem;
+        border-left: 0rem 1rem;
+        background-color: #f8f0df;
+    }
+    ul{
+        padding: 0rem 1rem;
+        li{
+            padding: 0rem 1rem;
+            border-left: 1px solid #9d9d9d;
+            font-family:"Josefin Sans", sans-serif;
+            :hover{
+                background-color: #9d9d9d;
+                -webkit-transition: 0.5s;
+                transition: 0.5s;
+            }
+            a{
+                :hover{
+                    color:  #ffffff !important;
+                }
+            }
+        }              
+    }
+
 }
 
-
-header{         
+header{                 
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0px;
+    z-index: 5 !important;    
     @include nav;
-        li { 
-            list-style-type: none;       
-            font-size: 15px;   
-            width:fit-content;
-            height: 2rem;  
-            a{
-                color: rgb(238, 238, 238);     
-                text-decoration: solid;    
-                flex-wrap: nowrap;
-                text-transform: uppercase;
-                font-weight: bold;
-                font-size: medium;
-                a:hover{    
-                    color: rgb(230, 230, 230);
-                    font-weight: bold;         
-                } 
-            }
-        }    
-}  
+}
+    
+    
+    

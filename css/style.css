@@ -12,51 +12,61 @@ body {
 }
 
 header {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0px;
+  z-index: 5 !important;
+}
+
+header .conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  height: 100px;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
-header li {
-  list-style-type: none;
-  font-size: 15px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 2rem;
+header .logoNavbar img {
+  margin-left: 2vw;
+  width: auto;
+  border-radius: 50%;
 }
 
-header li a {
-  color: #eeeeee;
-  -webkit-text-decoration: solid;
-          text-decoration: solid;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: medium;
+header .botonHamburguesa {
+  margin-right: 1rem;
+  border-left: 0rem 1rem;
+  background-color: #f8f0df;
 }
 
-header li a a:hover {
-  color: #e6e6e6;
-  font-weight: bold;
+header ul {
+  padding: 0rem 1rem;
+}
+
+header ul li {
+  padding: 0rem 1rem;
+  border-left: 1px solid #9d9d9d;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header ul li :hover {
+  background-color: #9d9d9d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header ul li a :hover {
+  color: #ffffff !important;
 }
 
 main .logoSkol {
   display: block;
   margin: auto;
+  border-radius: 50%;
 }
 
 main .tituloPrincipal {
@@ -120,21 +130,46 @@ main h1 {
           flex: 1;
 }
 
-main .imgCentrada {
-  text-align: center;
-  margin-top: 100px;
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+main .containerNosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0rem 3rem;
+  padding-bottom: 3rem;
 }
 
-main .imgCentrada .imgCentrada:hover {
+main .containerNosotros .historia {
+  background-color: #9d9d9d;
+  color: #162146;
+  height: 60vh;
+  width: 35vw;
+  font-family: "Bodoni Moda", serif;
+  font-size: 3rem;
+  line-height: 2rem;
+  font-weight: 500;
+  word-spacing: 0.3rem;
+  padding: 3rem;
+  margin: 3rem 0rem 0rem 0rem;
+  border: 1px #9d9d9d solid;
+}
+
+main .containerNosotros .historia .imgCheers {
+  margin: 3rem 0rem 0rem 0rem;
+  padding: 1rem;
+}
+
+main .containerNosotros .historia .imgCheers :hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
   -webkit-transform: scale(1.2, 1.2);
           transform: scale(1.2, 1.2);
-}
-
-main .historia {
-  background-color: #162146;
-  color: #d98c07;
 }
 
 main .productos {
@@ -160,6 +195,42 @@ main .form {
   color: #162146;
 }
 
+main .botonWzp img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 65%;
+  left: 5px;
+  z-index: 3 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+main .botonIg img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 75%;
+  left: 5px;
+  z-index: 3 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+main .botonFb img {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 85%;
+  left: 5px;
+  z-index: 3 !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
 .menuFooter {
   text-align: center;
   word-spacing: 10px;
@@ -174,11 +245,6 @@ main .form {
   background: #334756;
   background: radial-gradient(circle, #334756 0%, black 100%);
   border-radius: 20px;
-}
-
-.menuFooter :hover {
-  background-color: #082032;
-  color: aliceblue;
 }
 
 .menuFooter .redes {
@@ -199,19 +265,8 @@ main .form {
   margin: .5rem;
 }
 
-.caja--twt {
-  background-color: #55acee;
-}
-
-.caja--fb {
-  background-color: #3a5795;
-}
-
-.caja--ig {
-  background-color: #f0197d;
-}
-
-.caja--wzp {
-  background-color: green;
+.menuFooter h5 :hover {
+  background-color: #082032;
+  color: aliceblue;
 }
 /*# sourceMappingURL=style.css.map */

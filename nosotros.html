@@ -12,39 +12,42 @@
     <title>SKOL BIER CLUB🍻-HOME</title>
 </head>
 <body>
-    <header>     
-    
-        <nav class="nav-nosotros navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
+    <!--Header-->
+    <header id="#top">   
+        <nav class="navbar navbar-expand-lg sticky-top navbar-dark conteiner">
+            <div class="logoNavbar">
                 <a href="./index.html" class="navbar-brand">
-                    <img src="img/logoSkol.jpeg" alt="" width="30" height="24"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav-nosotros__ul navbar-nav">
-                    <li class="nav-nosotros__li nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-nosotros__li nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav-nosotros__li nav-item">
-                        <a class="nav-link" href="promociones.html">Promociones</a>
-                    </li>
-                    <li class="nav-nosotros__li nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-nosotros__li nav-item">
-                        <a class="nav-link" href="nosotros.html">About us</a>
-                    </li>
-                </ul>
-              </div>
+                    <img src="img/logoSkol.jpeg" alt="logo-Skol" width="30" height="24">
+                </a>
+            </div>
+            <div>
+                <button class="navbar-toggler botonHamburguesa" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse menuNavbar" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="index.html" >Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="promociones.html">Promociones</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="nav-link link__propio" aria-current="page" href="nosotros.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
     </header>
-
+    <!--Fin Header-->
+    <!--Main-->
     <main>        
         <section class="main-nosotros tituloPrincipal">        
             <h1><em> We love beer </em></h1>        
@@ -57,21 +60,38 @@
 				</div>
 			</div>
 		</div>
-        
-    <section class="main-nosotros historia">
-        <p><em>SKOL BIER CLUB</em> comenzó en el año 2013 con amigos en una casa debido a que nos juntabamos a mirar la serie "Vikings" todos los Domingos,
-        por lo que se nos ocurrió comenzar esta hermosa aventura de la cervecería en la localidad de Rosario-Santa Fe - Argentina y hacerle honor a dicha serie con nuestro nombre "SKOL" que significa "SALUD!".
-        Desde entonces hemos sumado experiencia y mejorando cada día nustros productos en base a las opiniones de nuestros clientes, logrando sabores
-        sabores increíbles para todos los gustos.</p>
-    </section>
+        <section>
+            <div class="main containerNosotros">
+                <div class="containerNosotros historia">
+                    <h4><p><span>SKOL BIER CLUB</span> comenzó en el año 2013 con amigos en una casa debido a que nos juntabamos a mirar la serie "Vikings" todos los Domingos, por lo que se nos ocurrió comenzar esta hermosa aventura de la cervecería en la localidad de Rosario-Santa Fe - Argentina y hacerle honor a dicha serie con nuestro nombre "SKOL" que significa "SALUD!". 
+                    Desde entonces hemos sumado experiencia y mejorando cada día nustros productos en base a las opiniones de nuestros clientes, logrando sabores increíbles para todos los gustos.</p></h4>
+                </div>
+                <div class="containerNosotros imgCheers">
+                    <img src="img/friends.jpeg" alt="Foto Salud!">
+                </div>              
+            </div>
+        </section>
+      
     
-    <section class="main-nosotros imgCentrada">
-    <img src="img/friends.jpeg" alt="Foto Salud!">
-    </section>
+
+    <!--Botonera Redes-->
+    <div class="main botonWzp">
+        <a href="http://whatsapp.com" target="_blank">
+        <img src="./img/whatsapp.png" alt="logoWhatsapp"></a>       
+    </div>
+    <div class="main botonIg">
+        <a href="http://instagram.com" target="_blank">
+        <img src="./img/instagram.png" alt="logoInstagram"></a>
+    </div>
+    <div class="main botonFb">
+        <a href="http://facebook.com" target="_blank">
+        <img src="./img/facebook.png" alt="logoFacebook"></a>  
+    </div>
     </main>
-    
+    <!--Fin Main-->
+    <!--Footer-->
     <footer class="footer menuFooter">
-        <h3>Todos los derechos reservados</h3>
+        
         <u1 class="footer__u1">
             <a href="index.html">INICIO</a>
             <a href="nosotros.html">ABOUT US</a>
@@ -79,21 +99,21 @@
             <a href="productos.html">PRODUCTOS</a>           
             <a href="contacto.html">CONTACTO</a>
         </u1>
-        <section class="redes">        
-            <a href="http://instagram.com" target="_blank">
-                <img src="./img/ig.jpeg" alt="logoInstagram"  height="30px" width="30px">
-            </a>
-            <a href="http://whatsapp.com" target="_blank">
-                <img src="./img/wzpOk.jpeg.jpg" alt="logoWhatsapp" height="30px" width="30px">
-            </a>
-            <a href="http://facebook.com" target="_blank">
-                <img src="./img/fb.jpeg" alt="logoFacebook" height="30px" width="30px">
-            </a>  
-            <a href="http://twitter.com" target="_blank">
-                <img src="./img/twt.jpeg" alt="logoTwitter" height="20px" width="30px">
-            </a>
-            </section>     
+        <section class="footer redes">        
+        <a href="http://instagram.com" target="_blank">
+            <img src="./img/instagram.png" alt="logoInstagram"  height="30px" width="30px">
+        </a>
+        <a href="http://whatsapp.com" target="_blank">
+            <img src="./img/whatsapp.png" alt="logoWhatsapp" height="30px" width="30px">
+        </a>
+        <a href="http://facebook.com" target="_blank">
+            <img src="./img/facebook.png" alt="logoFacebook" height="30px" width="30px">
+        </a>          
+        </section>
+
+        <h5 class="footer__h5">© 2021 - Todos los derechos reservados | DT</h5>    
     </footer>
+    <!--Fin Footer-->
 
     <script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>

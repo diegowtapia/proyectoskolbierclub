@@ -8,18 +8,24 @@
     background: rgb(51, 71, 86);
     background: radial-gradient(circle, rgb(51, 71, 86) 0%, rgba(0,0,0,1) 100%);
     border-radius: 20px;
-    :hover{
-        background-color: rgb(8, 32, 50);
-        color: aliceblue;
-    }    
-    .redes{        
+       
+    .redes{             
         display: flex;
         flex-direction: row;
         justify-content: center;        
         padding: 5px;
         a{
             margin: .5rem;           
-        }        
+        }
+               
+    }
+
+    h5{ 
+         
+        :hover{
+            background-color: rgb(8, 32, 50);
+            color: aliceblue;
+        } 
     }
 }
 
