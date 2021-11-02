@@ -10,9 +10,57 @@
     <!--<link rel="stylesheet" type="text/css" href="css/estilos.css">-->  
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link  rel="shortcut icon" href="./img/logoSkol.jpeg">
+
+    
+
+    
     <title>SKOL BIER CLUB🍻-HOME</title>
 </head>
 <body>
+    <!--Modal Edad--> 
+    <div class="navbar__backdrop js-navbar-backdrop"></div>
+
+    <div class="modal modal--minor" tabindex="-1" role="dialog" id="minorModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="modal-logo" src="./img/logoSkol.jpeg" alt="Logo de SKOL">
+    
+            <p class="modal-paragraph"></p>
+    
+            <h1 class="modal-big-paragraph">¿TENÉS 18 AÑOS O MÁS?</h1>
+    
+            <div class="modal-buttons-wrapper">
+              <button type="button" class="modal-button modal-button--yes">Sí</button>
+              <button type="button" class="modal-button modal-button--no" data-dismiss="modal">No</button>
+            </div>
+    
+            <p class="modal-small-paragraph fst-italic">Debés ser mayor de edad para ingresar a nuestra página.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal--minor-list" tabindex="-1" role="dialog" id="todoModal">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <img class="modal-logo" src="./img/logoSkol.jpeg" alt="Logo de SKOL">
+              <p class="modal-paragraph">Te ofrecemos escuchar un buen tema ó que aprendas el proceso de la cerveza para cuando tengas la edad suficiente!</p>             
+                <div>  
+                    <a class="modal-button-cancion" href="https://www.youtube.com/watch?v=by4EHmvME1c">
+                        Escuchar Temón                
+                    </a>
+                </div>
+                <div>
+                    <a class="modal-button-youtube" href="https://www.youtube.com/watch?v=U8sZF0_akIU">
+                        Aprender sobre la Cerveza              
+                    </a>
+                </div>               
+      
+            </div>
+          </div>
+        </div>
+      </div>
     <!--Header-->
     <header id="#top">   
         <nav class="navbar navbar-expand-lg sticky-top navbar-dark conteiner">
@@ -57,8 +105,8 @@
             <h1 class="animate__animated  animate__flash">
                 <em> We love beer</em>
             </h1>            
-        </section> 
-       
+        </section>
+        
         <!--Carousel-->
         <div class="row">
             <div class="col">
@@ -128,8 +176,39 @@
     </footer>
     <!--Fin Footer-->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.cervezaantares.com/combine/52a70e0e026831d24ee2f2b3535e29d8-1557268957"></script>    
+    <script src="/modules/system/assets/js/framework.combined-min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+          var status = JSON.parse( sessionStorage.getItem('isValid') ),
+            modalConfig = { keyboard: false, backdrop: 'static' };
+      
+          $minorModal = $('#minorModal');
+          $todoModal = $('#todoModal');
+      
+          if ( status === null ) {
+            $minorModal.modal( modalConfig );
+          }
+      
+          if ( status === false ) {
+            $todoModal.modal( modalConfig );
+          }
+      
+          $('.modal-button--yes').on('click', function(){
+            $minorModal.modal('hide');
+            sessionStorage.setItem('isValid', 'true');
+          });
+      
+          $('.modal-button--no').on('click', function(){
+            sessionStorage.setItem('isValid', 'false');          
+          
+      
+            $minorModal.modal('hide');
+            $todoModal.modal( modalConfig );
+          });
+        });
+      </script>
 </body>
 </html>
