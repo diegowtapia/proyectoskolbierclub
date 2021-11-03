@@ -47,23 +47,16 @@ main{
         flex: 1; 
     } 
         
-    .containerNosotros{
-        display: -webkit-box;
-        display: -ms-flexbox;
+    .containerNosotros{        
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        margin: 0rem 3rem;
-        padding-bottom: 3rem;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 0rem 1rem 0rem 0rem;
+        
         .historia{
                 background-color: $colorTerciario;
                 color: $colorSecundario;
-                height: 100vh;
+                height: fit-content;
                 width: 35vw;
                 font-family: "Bodoni Moda", serif;
                 font-size: 3rem;
@@ -72,16 +65,21 @@ main{
                 word-spacing: 0.3rem;
                 padding: 3rem;
                 margin: 3rem 0rem 0rem 0rem;                      
-                border: 1px #9d9d9d solid;       
-                .imgCheers{
-                    margin: 3rem 0rem 0rem 0rem;  
-                    padding: 1rem;                  
-                    :hover{
-                            transition: 0.8s;
-                            transform:scale(1.2 , 1.2);
-                    }    
-                }                 
+                border: 1px #9d9d9d solid; 
+                :hover{
+                    transition: 0.8s;
+                    transform:scale(1.2 , 1.2);
+                }      
+                                
         }
+        .imgCheers{
+            margin: 3rem 0rem 0rem 0rem;  
+            padding: 1rem;                  
+            :hover{
+                    transition: 0.8s;
+                    transform:scale(1.2 , 1.2);
+            }    
+        } 
                 
     }
     .productos{
@@ -93,9 +91,15 @@ main{
         list-style-position: inside;
         font-family: 'Grechen Fuemen', cursive;        
     }
-    .form{              
-        display: flex;        
-        justify-content: center;                
+
+    .form{     
+        text-align: center; 
+        height: 500px;
+        width: 700px;        
+        display: block; 
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 50px;        
         font-weight: bolder;
         background-color:rgba(255, 255, 255, 0.486);
         color: $colorSecundario;      
