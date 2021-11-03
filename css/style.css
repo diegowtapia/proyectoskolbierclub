@@ -143,6 +143,13 @@ main .containerNosotros {
   margin: 0rem 1rem 0rem 0rem;
 }
 
+main .containerNosotros :hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 main .containerNosotros .historia {
   background-color: #9d9d9d;
   color: #162146;
@@ -160,23 +167,16 @@ main .containerNosotros .historia {
   border: 1px #9d9d9d solid;
 }
 
-main .containerNosotros .historia :hover {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
-}
-
 main .containerNosotros .imgCheers {
-  margin: 3rem 0rem 0rem 0rem;
+  margin: 2rem 0rem 0rem 0rem;
   padding: 1rem;
 }
 
 main .containerNosotros .imgCheers :hover {
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  -webkit-transform: scale(1.2, 1.2);
-          transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 main .productos {
@@ -194,10 +194,14 @@ main .form {
   text-align: center;
   height: 500px;
   width: 700px;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
   font-weight: bolder;
   background-color: rgba(255, 255, 255, 0.486);
   color: #162146;
