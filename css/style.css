@@ -146,37 +146,34 @@ main .containerNosotros {
 main .containerNosotros :hover {
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.04, 1.04);
+          transform: scale(1.04, 1.04);
 }
 
 main .containerNosotros .historia {
   background-color: #9d9d9d;
   color: #162146;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  width: 35vw;
+  height: 100%;
+  width: 100%;
   font-family: "Bodoni Moda", serif;
   font-size: 3rem;
   line-height: 2rem;
   font-weight: 500;
   word-spacing: 0.3rem;
   padding: 3rem;
-  margin: 3rem 0rem 0rem 0rem;
-  border: 1px #9d9d9d solid;
+  margin: 3rem 0 0 0;
+  border: 1px #000000 solid;
 }
 
 main .containerNosotros .imgCheers {
-  margin: 2rem 0rem 0rem 0rem;
-  padding: 1rem;
+  margin: 30px auto auto auto;
 }
 
 main .containerNosotros .imgCheers :hover {
   -webkit-transition: 0.8s;
   transition: 0.8s;
-  -webkit-transform: scale(1.05, 1.05);
-          transform: scale(1.05, 1.05);
+  -webkit-transform: scale(1.01, 1.01);
+          transform: scale(1.01, 1.01);
 }
 
 @media (max-width: 1000px) {
@@ -193,22 +190,17 @@ main .productos {
   background-color: #162146;
 }
 
-main tr {
-  color: #d98c07;
-  list-style-type: circle;
-  list-style-position: inside;
-  font-family: 'Grechen Fuemen', cursive;
-}
-
-main .form {
+main .formu {
   text-align: center;
   height: 500px;
-  width: 700px;
+  width: 450px;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: nowrap;
-      flex-flow: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -253,15 +245,20 @@ main .botonFb img {
   opacity: 0.7;
 }
 
+main .prom {
+  margin: 30px;
+}
+
 main .card-index {
-  margin: 10px auto 0 auto;
+  margin: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
@@ -274,7 +271,6 @@ main .card-index-cards {
   height: 300px;
   margin: 2% 0 2% 0;
   background-color: #d98c07;
-  display: inline-block;
   background-size: cover;
   position: relative;
   cursor: pointer;
@@ -365,6 +361,7 @@ main .card-index-cards:hover .animate-text {
   background: #334756;
   background: radial-gradient(circle, #334756 0%, black 100%);
   border-radius: 20px;
+  color: rgba(240, 248, 255, 0.746);
 }
 
 .menuFooter .redes {
@@ -385,8 +382,7 @@ main .card-index-cards:hover .animate-text {
   margin: .5rem;
 }
 
-.menuFooter h5 :hover {
-  background-color: #082032;
-  color: aliceblue;
+.menuFooter .links a {
+  color: rgba(240, 248, 255, 0.746);
 }
 /*# sourceMappingURL=style.css.map */
