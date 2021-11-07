@@ -35,9 +35,7 @@ main{
         text-transform: uppercase;
         line-height: 30px;    
         letter-spacing: normal;
-        word-spacing: normal;    
-        //border: 1px solid black;
-        //background-color: goldenrod;    
+        word-spacing: normal;          
         border-radius: 25px;
         display: flex;
         justify-content: center;    
@@ -50,12 +48,14 @@ main{
     .containerNosotros{        
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: center;
+
+        
         margin: 0rem 1rem 0rem 0rem;
         :hover{
           transition: 0.8s;
           transform:scale(1.04 , 1.04);
-      } 
+        } 
         
         .historia{
                 background-color: $colorTerciario;
@@ -86,7 +86,7 @@ main{
     @media (max-width: 1000px) {
         .containerNosotros {
           flex-direction: column;
-          width: 350px; } }
+          justify-content: center; } }
 
     .productos{
         background-color: $colorSecundario;
