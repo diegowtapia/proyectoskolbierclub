@@ -140,7 +140,12 @@ main .containerNosotros {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0rem 1rem 0rem 0rem;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  justify-content: center;
+  margin: 1rem 0rem 0rem 0rem;
 }
 
 main .containerNosotros :hover {
@@ -166,7 +171,7 @@ main .containerNosotros .historia {
 }
 
 main .containerNosotros .imgCheers {
-  margin: 30px auto auto auto;
+  margin-top: 30px;
 }
 
 main .containerNosotros .imgCheers :hover {
@@ -194,21 +199,25 @@ main .productos {
 
 main .formu {
   text-align: center;
-  height: 500px;
-  width: 450px;
-  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  background-image: url("/img/destapar.jpg");
+  background-size: cover;
+  opacity: 0.7;
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   font-weight: bolder;
   background-color: rgba(255, 255, 255, 0.486);
-  color: #162146;
+  color: white;
 }
 
 main .botonWzp img {

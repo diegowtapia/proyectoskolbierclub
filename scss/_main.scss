@@ -47,11 +47,12 @@ main{
         
     .containerNosotros{        
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row wrap;        
         justify-content: center;
-
-        
-        margin: 0rem 1rem 0rem 0rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;        
+        margin: 1rem 0rem 0rem 0rem;
         :hover{
           transition: 0.8s;
           transform:scale(1.04 , 1.04);
@@ -59,7 +60,7 @@ main{
         
         .historia{
                 background-color: $colorTerciario;
-                color: $colorSecundario;
+                color: $colorSecundario;               
                 height: 100%;
                 width: 100%;
                 font-family: "Bodoni Moda", serif;
@@ -69,13 +70,12 @@ main{
                 word-spacing: 0.3rem;
                 padding: 3rem;
                 margin:3rem 0 0 0; ;                      
-                border: 1px #000000 solid; 
-                   
-                        
+                border: 1px #000000 solid;                        
         }
+
         .imgCheers{
-            margin:30px auto auto auto;
-                       
+            margin-top: 30px;
+                                             
             :hover{
                     transition: 0.8s;
                     transform:scale(1.01 , 1.01);
@@ -94,18 +94,19 @@ main{
     
     
     .formu{     
-          text-align: center; 
-          height: 500px;
-          width: 450px;
-          max-width: 1200px;        
-          display: flex; 
-          justify-content: center;                 
+          text-align: center;
+          display: flex;
+          flex-flow: row wrap;        
+          justify-content: left;
+          background-image: url("/img/destapar.jpg");
+          background-size:cover ;  
+          opacity: 0.7;                               
           margin-top: 50px; 
           margin-left: auto;
           margin-right: auto;       
           font-weight: bolder;
           background-color:rgba(255, 255, 255, 0.486);
-          color: $colorSecundario;      
+          color:rgb(255, 255, 255);      
       }
     
 
